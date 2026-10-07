@@ -1,11 +1,11 @@
-# Pleasant Dark Mode — Pleasant Password Server Dark Mode
+# Pleasant KeePass Dark Mode — Pleasant Password Server Dark Mode
 
 **Pleasant Password Server Dark Mode** — a dark-mode plugin for the KeePass for Pleasant Password Server Windows client (Pleasant KeePass). Adds a dark theme, modern icons and dark menus.
 
 **Dark-Mode-Plugin für Pleasant KeePass / Pleasant Password Server** mit dunkler Oberfläche, modernen Icons und dunklen Menüs. Eigenständiger Fork von KeeTheme Modern Dark 1.1.19.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
 
-![Pleasant Dark Mode im Pleasant-Client](docs/PleasantDark-main.png)
+![Pleasant KeePass Dark Mode im Pleasant-Client](docs/PleasantDark-main.png)
 
 Unveränderte Aufnahme, vom Nutzer als Projektvorschau bereitgestellt.
 
@@ -21,12 +21,12 @@ Die vorhandenen Modern-Dark-Funktionen sind übernommen.
 - Build und Visual-Studio-Projekt verwenden standardmäßig die Pleasant-KeePass.exe.
 - Ältere PwUuid-API: Vergleich mit PwUuid.Zero statt der nicht vorhandenen IsZero-Eigenschaft. Benutzerdefinierte Icons bleiben dadurch ausgenommen.
 - Die neuere lokalisierte Ressource MoreCommands wird nur verwendet, wenn die API sie bereitstellt.
-- Eigenständiges Projekt Pleasant Dark Mode mit Version 1.0.0.
+- Eigenständiges Projekt Pleasant KeePass Dark Mode mit Version 1.0.0.
 
 Assemblyname, Plugin-Klasse und Dateiname bleiben KeeTheme, damit KeePass das Plugin laden kann.
 Dieser Fork ersetzt im Pleasant-Client die bestehende KeeTheme.dll; beide Varianten dürfen dort nicht gleichzeitig installiert werden.
 
-[**Plugin-ZIP herunterladen / Download dark mode plugin**](https://github.com/kulmi84/Pleasant-Dark-Mode/releases/latest)
+[**Plugin-ZIP herunterladen / Download dark mode plugin**](https://github.com/kulmi84/Pleasant-KeePass-Dark-Mode/releases/latest)
 
 Das Release-ZIP enthält das installierbare Plugin **KeeTheme.dll**, README und Lizenz. Kein eigener Client erforderlich.
 
