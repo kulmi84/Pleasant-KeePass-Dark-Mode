@@ -30,7 +30,27 @@ Dieser Fork ersetzt im Pleasant-Client die bestehende KeeTheme.dll; beide Varian
 
 Das Release-ZIP enthält das installierbare Plugin **KeeTheme.dll**, README und Lizenz. Kein eigener Client erforderlich.
 
-## Installation
+## Automatische Installation unter Windows
+
+ZIP von diesem Release herunterladen und vollstaendig entpacken. **PowerShell als Administrator** oeffnen und im entpackten Ordner ausfuehren:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-PleasantDarkMode.ps1
+```
+
+Der Installer findet den Pleasant-Client in den Standardordnern, prueft die SHA-256-Pruefsumme der DLL und verlangt, dass der Client geschlossen ist. Vorhandene `KeeTheme.dll`/`KeeTheme.plgx` werden ausserhalb des Plugins-Ordners unter `KeeTheme-backups` gesichert. Danach wird die neue DLL installiert und gezielt mit `Unblock-File` freigegeben. Bei einem Installationsfehler werden vorhandene Plugin-Dateien wiederhergestellt.
+
+Abweichender Installationsordner:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-PleasantDarkMode.ps1 -InstallDirectory 'D:\Pleasant\KeePass'
+```
+
+Mit `-WhatIf` laesst sich der geplante Vorgang ohne Installation pruefen. `ExecutionPolicy Bypass` gilt nur fuer diesen PowerShell-Aufruf; die dauerhafte Einstellung wird nicht geaendert. Eine zentral vorgegebene Unternehmensrichtlinie kann die Skriptausfuehrung weiterhin verhindern. Dann die manuelle Installation verwenden.
+
+**English:** Extract the release ZIP, close Pleasant KeePass, and run the command above in an administrator PowerShell window. The installer verifies the DLL hash, backs up existing theme plugins, installs the DLL and unblocks that DLL only.
+
+## Installation (manuell)
 
 1. Pleasant KeePass schließen und die bestehende KeeTheme.dll bzw. KeeTheme.plgx sichern.
 2. Die bisherigen KeeTheme-Plugin-Dateien aus dem Pleasant-Plugins-Ordner nehmen.
