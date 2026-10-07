@@ -1,9 +1,9 @@
-# KeeTheme Pleasant Dark
+# Pleasant Dark Mode
 
 Eigenständiger Fork von KeeTheme Modern Dark 1.1.19 für **KeePass for Pleasant Password Server**.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
 
-![KeeTheme Pleasant Dark im Pleasant-Client](docs/PleasantDark-main.png)
+![Pleasant Dark Mode im Pleasant-Client](docs/PleasantDark-main.png)
 
 Unveränderte Aufnahme, vom Nutzer als Projektvorschau bereitgestellt.
 
@@ -19,12 +19,12 @@ Die vorhandenen Modern-Dark-Funktionen sind übernommen.
 - Build und Visual-Studio-Projekt verwenden standardmäßig die Pleasant-KeePass.exe.
 - Ältere PwUuid-API: Vergleich mit PwUuid.Zero statt der nicht vorhandenen IsZero-Eigenschaft. Benutzerdefinierte Icons bleiben dadurch ausgenommen.
 - Die neuere lokalisierte Ressource MoreCommands wird nur verwendet, wenn die API sie bereitstellt.
-- Eigene Produktbezeichnung KeeTheme Pleasant Dark und unabhängige Version 1.0.0.
+- Eigenständiges Projekt Pleasant Dark Mode mit Version 1.0.0.
 
 Assemblyname, Plugin-Klasse und Dateiname bleiben KeeTheme, damit KeePass das Plugin laden kann.
 Dieser Fork ersetzt im Pleasant-Client die bestehende KeeTheme.dll; beide Varianten dürfen dort nicht gleichzeitig installiert werden.
 
-[**Version 1.0.0 herunterladen**](https://github.com/kulmi84/Pleasant-KeeTheme/releases/tag/v1.0.0)
+[**Version 1.0.0 herunterladen**](https://github.com/kulmi84/Pleasant-Dark-Mode/releases/tag/v1.0.0)
 
 ## Installation
 
