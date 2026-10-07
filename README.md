@@ -1,6 +1,6 @@
-# Pleasant Dark Mode
+# Pleasant Dark Mode — Pleasant Password Server Dark Mode
 
-**Dark-mode plugin for KeePass for Pleasant Password Server (Pleasant KeePass).** Adds a dark theme, modern icons and dark menus to the Windows client.
+**Pleasant Password Server Dark Mode** — a dark-mode plugin for the KeePass for Pleasant Password Server Windows client (Pleasant KeePass). Adds a dark theme, modern icons and dark menus.
 
 **Dark-Mode-Plugin für Pleasant KeePass / Pleasant Password Server** mit dunkler Oberfläche, modernen Icons und dunklen Menüs. Eigenständiger Fork von KeeTheme Modern Dark 1.1.19.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
