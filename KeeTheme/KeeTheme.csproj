@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B82CD066-1BB1-42DB-B75A-F5489EF4A32D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeeTheme</RootNamespace>
+    <AssemblyName>KeeTheme</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KeePass, Version=2.42.1.23464, Culture=neutral, PublicKeyToken=fed2ed7716aecf5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\KeePass.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlVisitor.cs" />
+    <Compile Include="Decorators\WindowIconDecorator.cs" />
+    <Compile Include="Decorators\FirstFrameDecorator.cs" />
+    <Compile Include="Decorators\StandardIconPickerDecorator.cs" />
+    <Compile Include="Decorators\CenteredSearchDecorator.cs" />
+    <Compile Include="Decorators\ControlSnapshot.cs" />
+    <Compile Include="Decorators\KnownColorsDecorator.cs" />
+    <Compile Include="Decorators\ListViewGroupsPainter.cs" />
+    <Compile Include="Decorators\ListViewHeaderPainter.cs" />
+    <Compile Include="Decorators\ListViewNativeWindow.cs" />
+    <Compile Include="Decorators\ListViewDecorator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Decorators\ObjectListViewDecorator.cs" />
+    <Compile Include="Decorators\PwGeneratorMenuDecorator.cs" />
+    <Compile Include="Decorators\RichTextBoxDecorator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Decorators\RichTextBoxNativeWindow.cs" />
+    <Compile Include="Decorators\SplitButtonExDecorator.cs" />
+    <Compile Include="Decorators\TabControlDecorator.cs" />
+    <Compile Include="Decorators\TabControlPainter.cs" />
+    <Compile Include="Editor\ColorConverter.cs" />
+    <Compile Include="Editor\ColorEditor.cs" />
+    <Compile Include="Editor\GenericTypeConverter.cs" />
+    <Compile Include="Editor\TemplateEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\TemplateEditorForm.Designer.cs">
+      <DependentUpon>TemplateEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddedEventHandler.cs" />
+    <Compile Include="FormsArrayList.cs" />
+    <Compile Include="Options\KeeThemeOptions.cs" />
+    <Compile Include="TemplateFile.cs" />
+    <Compile Include="TemplateReader.cs" />
+    <Compile Include="Theme\ButtonLook.cs" />
+    <Compile Include="Theme\CheckBoxButtonLook.cs" />
+    <Compile Include="Theme\CheckBoxLook.cs" />
+    <Compile Include="Theme\ControlLook.cs" />
+    <Compile Include="Theme\CustomColorTable.cs" />
+    <Compile Include="Theme\CustomThemeTemplate.cs" />
+    <Compile Include="Theme\CustomToolStripRenderer.cs" />
+    <Compile Include="Theme\ModernToolbarIcons.cs" />
+    <Compile Include="Theme\ModernStandardIcons.cs" />
+    <Compile Include="Theme\LinkLabelLook.cs" />
+    <Compile Include="Theme\ListViewLook.cs" />
+    <Compile Include="Theme\MenuLook.cs" />
+    <Compile Include="Theme\OtherLook.cs" />
+    <Compile Include="Theme\Palette.cs" />
+    <Compile Include="Theme\PropertyGridLook.cs" />
+    <Compile Include="Theme\RichTextBoxLook.cs" />
+    <Compile Include="Theme\ScrollBarLook.cs" />
+    <Compile Include="Theme\TabControlLook.cs" />
+    <Compile Include="Theme\ToolStripLook.cs" />
+    <Compile Include="Theme\TreeViewLook.cs" />
+    <Compile Include="KeeTheme.cs" />
+    <Compile Include="KeeThemeExt.cs" />
+    <Compile Include="Theme\CustomTheme.cs" />
+    <Compile Include="Theme\ITheme.cs" />
+    <Compile Include="Theme\IniFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Options\OptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\OptionsPanel.Designer.cs">
+      <DependentUpon>OptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win10ThemeMonitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Editor\TemplateEditorForm.resx">
+      <DependentUpon>TemplateEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\OptionsPanel.resx">
+      <DependentUpon>OptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ModernWindow.ico" />
+    <EmbeddedResource Include="Resources\ModernBanner.png" />
+    <EmbeddedResource Include="Resources\ModernDark.ini" />
+    <EmbeddedResource Include="Resources\DarkTheme.ini" />
+    <EmbeddedResource Include="Resources\DarkThemeWin11.ini" />
+    <None Include="Resources\PluginIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent></PostBuildEvent>
+  </PropertyGroup>
+</Project>

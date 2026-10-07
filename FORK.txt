@@ -1,0 +1,5 @@
+Source: https://github.com/kulmi84/KeeTheme
+Base commit: 0e138fcd2af9b7e386c234ead240706b8ac21f38
+Base version: 1.1.19
+Fork version: 1.0.0
+Created: 2026-10-07
