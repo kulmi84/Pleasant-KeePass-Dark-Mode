@@ -34,12 +34,26 @@ Das Release-ZIP enthält das installierbare Plugin **KeeTheme.dll**, README und 
 
 1. Pleasant KeePass schließen und die bestehende KeeTheme.dll bzw. KeeTheme.plgx sichern.
 2. Die bisherigen KeeTheme-Plugin-Dateien aus dem Pleasant-Plugins-Ordner nehmen.
-3. Release-ZIP entpacken und die enthaltene `KeeTheme.dll` in `C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\Plugins` kopieren.
+3. Vor dem Entpacken: Rechtsklick auf das heruntergeladene ZIP → **Eigenschaften → Zulassen → Übernehmen** (falls angezeigt). Dann Release-ZIP entpacken und die enthaltene `KeeTheme.dll` in `C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\Plugins` kopieren.
 4. Pleasant KeePass starten und unter **Extras → Optionen → KeeTheme** das Theme **Modern Dark** aktivieren.
 5. Hauptfenster, Password-Server-Menü, Anmeldedialog, Gruppen-/Eintragsdialoge und Theme-Umschaltung prüfen.
 
 Die Konfigurationsschlüssel bleiben KeeTheme.* und übernehmen gegebenenfalls vorhandene Theme-Einstellungen.
 WebView2-Inhalte und speziell gezeichnete Pleasant-Komponenten benötigen eine eigene Prüfung.
+
+## Windows blockiert das Plugin (0x80131515)
+
+Falls KeePass das Plugin als inkompatibel meldet und in den Details **0x80131515**, „Vorgang wird nicht unterstützt“ oder eine „Netzwerkadresse“ nennt, kann die Windows-Internetmarkierung das Laden der DLL verhindern. Auf einem weiteren Rechner wurde der Fehler durch Freigeben der DLL behoben.
+
+Pleasant KeePass schließen. Rechtsklick auf die installierte `KeeTheme.dll` → **Eigenschaften → Zulassen → Übernehmen**, dann KeePass neu starten. Alternativ PowerShell als Administrator öffnen:
+
+```powershell
+Unblock-File -LiteralPath 'C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\Plugins\KeeTheme.dll'
+```
+
+**English:** Before extracting the downloaded ZIP, open Properties, select **Unblock**, and Apply (if shown). If error **0x80131515** occurs after installation, close KeePass and unblock the installed `KeeTheme.dll`, then restart.
+
+[Microsoft: .NET Framework loading of assemblies from remote sources](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/loadfromremotesources-element).
 
 ## Build
 
