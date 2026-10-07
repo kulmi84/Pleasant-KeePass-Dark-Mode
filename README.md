@@ -1,6 +1,8 @@
 # Pleasant Dark Mode
 
-Eigenständiger Fork von KeeTheme Modern Dark 1.1.19 für **KeePass for Pleasant Password Server**.
+**Dark-mode plugin for KeePass for Pleasant Password Server (Pleasant KeePass).** Adds a dark theme, modern icons and dark menus to the Windows client.
+
+**Dark-Mode-Plugin für Pleasant KeePass / Pleasant Password Server** mit dunkler Oberfläche, modernen Icons und dunklen Menüs. Eigenständiger Fork von KeeTheme Modern Dark 1.1.19.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
 
 ![Pleasant Dark Mode im Pleasant-Client](docs/PleasantDark-main.png)
@@ -24,13 +26,15 @@ Die vorhandenen Modern-Dark-Funktionen sind übernommen.
 Assemblyname, Plugin-Klasse und Dateiname bleiben KeeTheme, damit KeePass das Plugin laden kann.
 Dieser Fork ersetzt im Pleasant-Client die bestehende KeeTheme.dll; beide Varianten dürfen dort nicht gleichzeitig installiert werden.
 
-[**Version 1.0.0 herunterladen**](https://github.com/kulmi84/Pleasant-Dark-Mode/releases/tag/v1.0.0)
+[**Plugin-ZIP herunterladen / Download dark mode plugin**](https://github.com/kulmi84/Pleasant-Dark-Mode/releases/latest)
+
+Das Release-ZIP enthält das installierbare Plugin **KeeTheme.dll**, README und Lizenz. Kein eigener Client erforderlich.
 
 ## Installation
 
 1. Pleasant KeePass schließen und die bestehende KeeTheme.dll bzw. KeeTheme.plgx sichern.
 2. Die bisherigen KeeTheme-Plugin-Dateien aus dem Pleasant-Plugins-Ordner nehmen.
-3. `dist/KeeTheme.dll` in `C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\Plugins` kopieren.
+3. Release-ZIP entpacken und die enthaltene `KeeTheme.dll` in `C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\Plugins` kopieren.
 4. Pleasant KeePass starten und unter **Extras → Optionen → KeeTheme** das Theme **Modern Dark** aktivieren.
 5. Hauptfenster, Password-Server-Menü, Anmeldedialog, Gruppen-/Eintragsdialoge und Theme-Umschaltung prüfen.
 
