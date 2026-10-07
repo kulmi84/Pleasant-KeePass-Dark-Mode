@@ -3,6 +3,10 @@
 Eigenständiger Fork von KeeTheme Modern Dark 1.1.19 für **KeePass for Pleasant Password Server**.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
 
+![KeeTheme Pleasant Dark im Pleasant-Client](docs/PleasantDark-main.png)
+
+Unveränderte Aufnahme, vom Nutzer als Projektvorschau bereitgestellt.
+
 ## Ziel und Stand
 
 Zielkonfiguration laut Nutzer-Screenshots: KeePass 2.54 (64-Bit), Pleasant Password Server Plugin 9.2.0.0.
