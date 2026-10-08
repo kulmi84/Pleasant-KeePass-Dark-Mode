@@ -1,8 +1,8 @@
-# Pleasant KeePass Dark Mode — KeeTheme Dark Theme
+# Pleasant KeePass Dark Mode — Free KeeTheme Dark Theme
 
-**KeePass Dark Mode and KeePass Dark Theme for the Pleasant Password Server Windows client.** Pleasant KeePass Dark Mode is a KeeTheme-based plugin for KeePass for Pleasant Password Server (Pleasant KeePass), adding a dark interface, modern icons and dark menus.
+**Free KeePass Dark Mode and KeePass Dark Theme for the Pleasant Password Server Windows client (Pleasant Passwords).** Pleasant KeePass Dark Mode is a KeeTheme-based plugin for KeePass for Pleasant Password Server (Pleasant KeePass), adding a dark interface, modern icons and dark menus.
 
-**Dark-Mode-Plugin für Pleasant KeePass / Pleasant Password Server** mit dunkler Oberfläche, modernen Icons und dunklen Menüs. Eigenständiger Fork von KeeTheme Modern Dark 1.1.19.
+**Kostenloser Dark Mode (dunkles Theme) für Pleasant KeePass / Pleasant Password Server unter Windows** mit dunkler Oberfläche, modernen Icons und dunklen Menüs. Eigenständiger Fork von KeeTheme Modern Dark 1.1.19.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
 
 [**Download Pleasant KeePass Dark Mode 1.0.0**](https://github.com/kulmi84/Pleasant-KeePass-Dark-Mode/releases/tag/v1.0.0) · [Installation](#installation-manuell) · [Windows installer](#automatische-installation-unter-windows)
@@ -12,7 +12,15 @@ Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
 - **KeePass for Pleasant Password Server on Windows:** use this repository, **Pleasant KeePass Dark Mode 1.0.0**, based on KeeTheme Modern Dark 1.1.19. The confirmed setup is KeePass 2.54 (64-bit) with Pleasant Password Server Plugin 9.2.0.0; other Pleasant-specific dialogs have not been systematically tested.
 - **Regular KeePass 2 on Windows:** use [KeePass Modern Dark Theme](https://github.com/kulmi84/KeePass-Modern-Dark-Theme), the separate KeeTheme fork for standard KeePass.
 
-This plugin themes the Windows client. It is an independent project, not an official Pleasant Solutions product. See the installation and compatibility notes below.
+This free, MIT-licensed plugin themes the Windows client. It is an independent project, not an official Pleasant Solutions product. See the installation and compatibility notes below.
+
+## Compatibility / Kompatibilität
+
+**English:** Looking for a free dark mode for your current Pleasant KeePass / Pleasant Password Server installation? The confirmed configuration is **KeePass 2.54 (64-bit) with Pleasant Password Server Plugin 9.2.0.0**. Compatibility with other or newer client/plugin versions has not been verified. Compare your installed versions before installing; some Pleasant-specific dialogs remain untested. This theme is for the Windows client, not the server web interface.
+
+**Deutsch:** Du suchst einen kostenlosen Dark Mode oder ein dunkles Design für deine aktuelle Pleasant-KeePass-Installation? Bestätigt ist **KeePass 2.54 (64-Bit) mit Pleasant Password Server Plugin 9.2.0.0**. Die Kompatibilität mit anderen oder neueren Client-/Plugin-Versionen ist nicht nachgewiesen. Vergleiche vor der Installation deine Versionsangaben; einzelne Pleasant-spezifische Dialoge sind noch ungeprüft. Das Theme betrifft den Windows-Client, nicht die Weboberfläche des Servers.
+
+Das Plugin ist kostenlos unter der MIT-Lizenz verfügbar. Dieses Projekt ist unabhängig von Pleasant Solutions und kein offizielles Herstellerprodukt.
 
 ![Pleasant KeePass Dark Mode im Pleasant-Client](docs/PleasantDark-main.png)
 
