@@ -1,9 +1,18 @@
-# Pleasant KeePass Dark Mode — Pleasant Password Server Dark Mode
+# Pleasant KeePass Dark Mode — KeeTheme Dark Theme
 
-**Pleasant Password Server Dark Mode** — a dark-mode plugin for the KeePass for Pleasant Password Server Windows client (Pleasant KeePass). Adds a dark theme, modern icons and dark menus.
+**KeePass Dark Mode and KeePass Dark Theme for the Pleasant Password Server Windows client.** Pleasant KeePass Dark Mode is a KeeTheme-based plugin for KeePass for Pleasant Password Server (Pleasant KeePass), adding a dark interface, modern icons and dark menus.
 
 **Dark-Mode-Plugin für Pleasant KeePass / Pleasant Password Server** mit dunkler Oberfläche, modernen Icons und dunklen Menüs. Eigenständiger Fork von KeeTheme Modern Dark 1.1.19.
 Version: **1.0.0**. Maintainer: Marcin Kulmaczewski (kulmi84).
+
+[**Download Pleasant KeePass Dark Mode 1.0.0**](https://github.com/kulmi84/Pleasant-KeePass-Dark-Mode/releases/tag/v1.0.0) · [Installation](#installation-manuell) · [Windows installer](#automatische-installation-unter-windows)
+
+## Which KeePass dark theme do I need?
+
+- **KeePass for Pleasant Password Server on Windows:** use this repository, **Pleasant KeePass Dark Mode 1.0.0**, based on KeeTheme Modern Dark 1.1.19. The confirmed setup is KeePass 2.54 (64-bit) with Pleasant Password Server Plugin 9.2.0.0; other Pleasant-specific dialogs have not been systematically tested.
+- **Regular KeePass 2 on Windows:** use [KeePass Modern Dark Theme](https://github.com/kulmi84/KeePass-Modern-Dark-Theme), the separate KeeTheme fork for standard KeePass.
+
+This plugin themes the Windows client. It is an independent project, not an official Pleasant Solutions product. See the installation and compatibility notes below.
 
 ![Pleasant KeePass Dark Mode im Pleasant-Client](docs/PleasantDark-main.png)
 
@@ -89,7 +98,7 @@ Die übernommenen Prüfskripte und `docs/ModernDark.md` dokumentieren den urspr�
 
 ## Herkunft und Lizenz
 
-Basis: [kulmi84/KeeTheme](https://github.com/kulmi84/KeeTheme), Modern Dark 1.1.19.
+Basis: [KeePass Modern Dark Theme](https://github.com/kulmi84/KeePass-Modern-Dark-Theme), KeeTheme Modern Dark 1.1.19.
 Ursprüngliches KeeTheme: [xatupal/KeeTheme](https://github.com/xatupal/KeeTheme), Krzysztof Łaputa.
 Lizenz: [MIT](LICENSE). Quellenhinweise für KeePass-Grafiken stehen in `docs/ModernDark.md`.
 Dies ist ein unabhängiger Theme-Fork, kein offizielles Produkt von Pleasant Solutions.
